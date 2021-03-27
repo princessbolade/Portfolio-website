@@ -105,21 +105,21 @@ const NavBar = () => {
                     href="/aboutus"
                     className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    About Us
+                    About me
                   </a>
 
                   <a
                     href="/groups"
                     className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Groups
+                    Portfolio
                   </a>
 
                   <a
                     href="/faq"
                     className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    FAQ
+                    contact me
                   </a>
                 </div>
               </div>
