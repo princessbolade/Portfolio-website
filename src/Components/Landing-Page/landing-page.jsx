@@ -9,8 +9,8 @@ import ReactImage from "../../assets/react.png";
 import Git from "../../assets/git.png";
 
 const LandingPage = () => (
-  <div className="mt-36 ml-24 flex justify-center">
-    <section className="text-left">
+  <div className="mt-36 md:ml-24 flex justify-center">
+    <section className="text-left px-6">
       <strong className="text-gray-300 text-3xl uppercase">
         Hi, I'm Mobolade,
       </strong>
@@ -27,12 +27,14 @@ const LandingPage = () => (
         loop={Infinity}
         wrapper="p"
       />
-      <p className="text-2xl text-gray-300 pt-6 text-justify mt-4 tracking-wide leading-relaxed">
-        I have been sharing my need for speed for a while, after i discovered
-        how much i'd love to improve User experience in the tech space. <br /> I
-        help businesses build elegant, robust and scalable software with the
-        best tools.
-      </p>
+      <div className="container">
+        <p className="text-2xl text-gray-300 pt-6 text-justify mt-4 tracking-wide leading-relaxed">
+          I have been sharing my need for speed for a while, after i discovered
+          how much i'd love to improve User experience in the tech space. <br />{" "}
+          I help businesses build elegant, robust and scalable software with the
+          best tools.
+        </p>
+      </div>
 
       <div className="mt-12">
         <span
@@ -118,7 +120,7 @@ const LandingPage = () => (
           My work flow process
         </h3>
         <div
-          className="grid-cols-3"
+          className="md:grid-cols-3"
           style={{
             display: "grid",
             gridAutoRows: "1fr",
@@ -142,7 +144,7 @@ const LandingPage = () => (
               write good logic to tackle the solution.
             </p>
           </div>
-          <div style={{ marginLeft: "45px" }}>
+          <div className="md:ml-11">
             <i className="fas fa-clipboard-check text-2xl mt-4 text-blue-300"></i>
             <h4 className="text-white font-bold text-3xl">Implement</h4>
             <p className="text-gray-300 text-lg mt-2 leading-relaxed tracking-wide text-left ">

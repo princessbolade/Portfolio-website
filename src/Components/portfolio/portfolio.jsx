@@ -4,12 +4,12 @@ import Wave from "../../assets/wave.svg";
 import Dezzer from "../../assets/deezer.png";
 
 const Portfolio = () => (
-  <section style={{ marginTop: "12%" }}>
-    <h2 className="text-gray-300 uppercase font-bold text-3xl ml-24">
+  <section className="px-6" style={{ marginTop: "12%" }}>
+    <h2 className="text-gray-300 mb-12 text-center uppercase font-bold text-3xl">
       I'm currently Working On
     </h2>
-    <div className="flex justify-between" style={{ margin: "0 0 8rem" }}>
-      <div className="ml-24">
+    <div className="md:flex md:justify-between container mx-auto">
+      <div className="">
         <h3
           className="text-white pt-12 text-left"
           style={{ fontSize: "2rem", margin: "0 0 2rem" }}
@@ -35,24 +35,21 @@ const Portfolio = () => (
           Visit DIGIAJO
         </a>
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${DigiAjo})`,
-          backgroundSize: "contain",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          marginBottom: "20px",
-          marginTop: "20px",
-          width: "512px",
-          height: "220px",
-          borderLeft: "5px solid #496c3a",
-          borderRadius: "20px 20px 20px 20px",
-        }}
-      ></div>
+      <div className="md:w-1/3 w-full">
+        <img
+          className="w-full object-cover"
+          src={DigiAjo}
+          alt=""
+          style={{
+            borderLeft: "5px solid #496c3a ",
+            borderRadius: "20px 20px 20px 20px",
+          }}
+        />
+      </div>
     </div>
 
-    <div className="flex justify-between" style={{ margin: "0 0 8rem" }}>
-      <div className="ml-24">
+    <div className="md:flex md:justify-between container mx-auto">
+      <div>
         <h3
           className="text-white pt-12 text-left"
           style={{ fontSize: "2rem", margin: "0 0 2rem" }}
@@ -78,28 +75,25 @@ const Portfolio = () => (
           Visit Deezer-clone
         </a>
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${Dezzer})`,
-          backgroundSize: "contain",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          marginBottom: "20px",
-          marginTop: "20px",
-          width: "512px",
-          height: "220px",
-          borderLeft: "5px solid #496c3a",
-          borderRadius: "20px 20px 20px 20px",
-        }}
-      ></div>
+      <div className="md:w-1/3 w-full">
+        <img
+          className="w-full object-cover"
+          src={Dezzer}
+          alt=""
+          style={{
+            borderLeft: "5px solid #496c3a ",
+            borderRadius: "20px 20px 20px 20px",
+          }}
+        />
+      </div>
     </div>
 
     <div>
-      <h3 className="text-white mt-12 font-bold text-3xl text-center">
+      <h3 className="text-gray-300 mt-12 font-bold text-3xl text-center">
         OTHER PROJECTS I'VE WORKED ON
       </h3>
       <div
-        className="grid-cols-3pos"
+        className="container mx-auto md:grid-cols-3"
         style={{
           display: "grid",
           gridAutoRows: "1fr",
@@ -107,7 +101,7 @@ const Portfolio = () => (
           marginTop: "30px",
         }}
       >
-        <div className="ml-24">
+        <div>
           <h4 className="text-white font-bold text-3xl">IP ADDRESS TRACKER</h4>
           <p className="text-gray-300 text-lg mt-2 leading-relaxed tracking-wide text-left">
             A web app that shows your IP address and its exact location on the
@@ -116,18 +110,18 @@ const Portfolio = () => (
             domain. <br /> [Built with HTML, TailwindCSS and JavaScript]
           </p>
         </div>
-        <div style={{ marginLeft: "45px" }}>
+        <div>
           <h4 className="text-white font-bold text-3xl">
             SIMPLE REACT CALCULATOR
           </h4>
           <p className="text-gray-300 text-lg mt-2 leading-relaxed tracking-wide text-left ">
             A simple calculator for basic mathematics arithmetic operations and
             calculations easily and accurately. It can be used in Addition,
-            subtraction, multiplication and division. Decimal arithmetic
-            operations can be carried out too. <br /> [Built with ReactJs,CSS]
+            subtraction, multiplication and division. <br /> [Built with
+            ReactJs,CSS]
           </p>
         </div>
-        <div style={{ marginLeft: "45px" }}>
+        <div>
           <h4 className="text-white font-bold text-3xl">TODO-LIST GUIDE</h4>
           <p className="text-gray-300 text-lg mt-2 leading-relaxed tracking-wide text-left ">
             A simple task application that allows you to create a task, mark as
@@ -139,7 +133,7 @@ const Portfolio = () => (
       </div>
     </div>
     <div
-      className="grid-cols-3"
+      className=" container mx-auto md:grid-cols-3"
       style={{
         display: "grid",
         gridAutoRows: "1fr",
@@ -147,7 +141,7 @@ const Portfolio = () => (
         marginTop: "50px",
       }}
     >
-      <div className="ml-24">
+      <div>
         <h4 className="text-white font-bold text-3xl">
           ROYAL CLOTHING E-COMMERCE
         </h4>
@@ -158,17 +152,16 @@ const Portfolio = () => (
           <br /> [Built with HTML, TailwindCSS and JavaScript]
         </p>
       </div>
-      <div style={{ marginLeft: "45px" }}>
+      <div>
         <h4 className="text-white font-bold text-3xl">MARKDOWN BLOG</h4>
         <p className="text-gray-300 text-lg mt-2 leading-relaxed tracking-wide text-left ">
           A simple calculator for basic mathematics arithmetic operations and
           calculations easily and accurately. It can be used in Addition,
-          subtraction, multiplication and division. Decimal arithmetic
-          operations can be carried out too. <br /> [Built with NODEJS, Express
-          and MongoDB]
+          subtraction, multiplication and division. <br /> [Built with NODEJS,
+          Express and MongoDB]
         </p>
       </div>
-      <div style={{ marginLeft: "45px" }}>
+      <div>
         <h4 className="text-white font-bold text-3xl">FOODIES</h4>
         <p className="text-gray-300 text-lg mt-2 leading-relaxed tracking-wide text-left ">
           A simple task application that allows you to create a task, mark as
