@@ -116,7 +116,7 @@ const LandingPage = () => (
         </div>
       </div>
       <div>
-        <h3 className="text-white mt-12 font-bold text-3xl text-center">
+        <h3 className="text-white uppercase mt-12 font-bold text-3xl text-center">
           My work flow process
         </h3>
         <div

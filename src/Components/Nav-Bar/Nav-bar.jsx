@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Transition } from "@headlessui/react";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,21 +21,51 @@ const NavBar = () => {
                         <div className="w-10 border-b border-solid border-green-500"></div>
                         <h1 className="ml-3 text-3xl font-bold">1</h1>
                       </div>
-                      <h1 className="text-white uppercase"> About Me</h1>
+                      <h1 className="text-white uppercase">
+                        {" "}
+                        <Link
+                          activeClass="active"
+                          to="aboutme"
+                          spy={true}
+                          smooth={true}
+                          className="cursor-pointer"
+                        >
+                          {" "}
+                          About Me{" "}
+                        </Link>
+                      </h1>
                     </div>
                     <div>
                       <div className="flex items-center text-white justify-end">
                         <div className="w-10 border-b border-solid border-green-500"></div>
                         <h1 className="ml-3 text-3xl font-bold">2</h1>
                       </div>
-                      <h1 className="text-white uppercase">Portfolio</h1>
+                      <h1 className="text-white uppercase">
+                        <Link
+                          to="portfolio"
+                          spy={true}
+                          smooth={true}
+                          className="cursor-pointer"
+                        >
+                          Portfolio
+                        </Link>{" "}
+                      </h1>
                     </div>
                     <div>
                       <div className="flex items-center text-white justify-end">
                         <div className="w-10 border-b border-solid border-green-500"></div>
                         <h1 className="ml-3 text-3xl font-bold">3</h1>
                       </div>
-                      <h1 className="text-white uppercase">Contact me</h1>
+                      <h1 className="text-white uppercase">
+                        <Link
+                          to="contact"
+                          spy={true}
+                          smooth={true}
+                          className="cursor-pointer"
+                        >
+                          Contact me{" "}
+                        </Link>{" "}
+                      </h1>
                     </div>
                   </div>
                 </div>
@@ -105,21 +135,44 @@ const NavBar = () => {
                     href="/aboutus"
                     className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    About me
+                    {" "}
+                    <Link
+                      activeClass="active"
+                      to="aboutme"
+                      spy={true}
+                      smooth={true}
+                      className="cursor-pointer"
+                    >
+                      About me{" "}
+                    </Link>
                   </a>
 
                   <a
                     href="/groups"
                     className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Portfolio
+                    <Link
+                      to="portfolio"
+                      spy={true}
+                      smooth={true}
+                      className="cursor-pointer"
+                    >
+                      Portfolio{" "}
+                    </Link>
                   </a>
 
                   <a
                     href="/faq"
                     className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    contact me
+                    <Link
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      className="cursor-pointer"
+                    >
+                      contact me{" "}
+                    </Link>
                   </a>
                 </div>
               </div>
