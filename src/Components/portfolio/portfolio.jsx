@@ -66,11 +66,13 @@ const Portfolio = () => (
               }}
               className="text-gray-300 leading-relaxed"
             >
-              DIGIAJO is a rotational savings club aimed at a group of
-              individuals <br />
-              to save together in a form of peer-to-peer saving. <br /> Group
-              members will contribute funds into a pool regularly, <br /> and
-              take turns withdrawing funds from the pool. <br />
+              DEEZER is a music app that allows you to access the best music
+              globally.
+              <br />
+              It has the great feautures like the feautured weekly, <br />{" "}
+              Allows you to access featured playlists and the best albums.{" "}
+              <br /> You can also search for and favorite your best tracks.{" "}
+              <br />
               [Built with ReactJS, Ant-Design]
             </p>
             <a className="text-white text-sm mb-12" href="">
@@ -159,12 +161,15 @@ const Portfolio = () => (
             </p>
           </div>
           <div className="md:ml-4">
-            <h4 className="text-white font-bold text-3xl">MARKDOWN BLOG</h4>
+            <h4 className="text-white font-bold uppercase text-3xl">
+              Bulb Fellowship website
+            </h4>
             <p className="text-gray-300 text-lg mt-2 leading-relaxed tracking-wide text-left ">
-              A simple calculator for basic mathematics arithmetic operations
-              and calculations easily and accurately. It can be used in
-              Addition, subtraction, multiplication and division. <br /> [Built
-              with NODEJS, Express and MongoDB]
+              Fellowship Website for The Bulb Africa for intending fellows and
+              facilators to apply. The intending fellows can read aboout the
+              various courses provided in the program and employers can hire
+              engineers from the website.
+              <br /> [Built with Typescript,NextJs,Tailwind-CSS]
             </p>
           </div>
           <div className="md:ml-4">
