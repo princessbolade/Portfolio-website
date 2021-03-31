@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Contact = () => (
   <>
@@ -14,9 +15,11 @@ const Contact = () => (
         I am currently available to be hired and i'd love to have a chat with
         you about exciting opportunities.
       </h4>
-      <button className="bg-green-700 hover:bg-green-900 outline-none text-white font-bold mt-5 py-4 px-6 border-b-2 focus:outline-none rounded-full uppercase">
-        Contact me{" "}
-      </button>
+      <a href="mailto:mobolade.akinlua@outlook.com">
+        <button className="bg-green-700 hover:bg-green-900 outline-none text-white font-bold mt-5 py-4 px-6 border-b-2 focus:outline-none rounded-full uppercase">
+          Contact me
+        </button>
+      </a>
     </div>
   </>
 );

@@ -31,11 +31,11 @@ const PersonalProfile = () => (
           JavaScript. Outside software engineering, I'm a part-time baby girl,I
           love to cook and I have great interest in politics.{" "}
         </p>
-        <div className="pt-6 pb-4">
+        {/* <div className="pt-6 pb-4">
           <button className="bg-green-700 hover:bg-green-900 outline-none text-white font-bold py-4 px-6 border-b-2 focus:outline-none rounded-full">
             Portfolio
           </button>
-        </div>
+        </div> */}
         <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-around text-3xl">
           <a href="https://github.com/princessbolade">
             <i class="fab fa-github"></i>

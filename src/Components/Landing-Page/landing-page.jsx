@@ -43,7 +43,7 @@ const LandingPage = () => (
         >
           Below are the amazing technologies and frameworks I work with
         </span>
-        <div className=" flex items-center justify-around text-white flex-wrap mr-24 order-5">
+        <div className=" flex items-center justify-between text-white flex-wrap m-auto order-5">
           <div className="text-center m-8 w-16 sm:w-auto">
             <img
               src={HTML}
